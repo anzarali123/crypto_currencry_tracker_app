@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
-}
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  display: flex;
+  justify-content: center;
+  background-color: #1e3a8a;
+  color: whitesmoke;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.coins-container {
+  font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
+  margin: 20px;
+  gap: 10px;
+}
+
+.coin-container {
+  display: flex;
+  width: 800px;
+  height: 100px;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  border-bottom: 1px solid white;
+}
+.coin-container img {
+  width: 70px;
+  height: 70px;
+}
+.red {
+  color: red;
+}
+.green {
+  color: #84cc16;
+}
+.searchbox-container {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+input {
+  font-size: 30px;
+  border: none;
+  border-bottom: 2px solid white;
+  text-indent: 8px;
+  padding: 5px;
+  background-color: transparent;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+input::placeholder {
+  color: white;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input:focus {
+  outline: none;
+  border-bottom: 3px solid white;
 }
